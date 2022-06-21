@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+    {% block title %}
+        TimeParser
+    {% endblock %}
+
+{% block body_txt %}
+<h2><u>TimeParser</u></h2>
+<p>Please Select a TimeLogFile to check total spend time.</p>
+
+<form action="output" method="POST" enctype="multipart/form-data" style="margin:auto;width:auto" target="_blank">
+    <div class="d-flex justify-content-center mt-5">
+        <input class="w3-blue" type="file" id="chosen_file" name="chosen_file" required>
+    </div><br>
+    <button type="submit">Run</button>
+    <br>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
